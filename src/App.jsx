@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import './App.css'
 import WeatherCard from './components/WeatherCard'
+import logo from './assets/logo.png'
 
 function App() {
 
@@ -50,7 +51,7 @@ console.log(weather)
      { 
      isLoading ?
       <div className='load_screen'>
-        <img className='load_image' src="./public/logo.png" alt="logo" />
+        <img className='load_image' src={logo} alt="logo" />
       </div>
      :
      <WeatherCard 
