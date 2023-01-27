@@ -1,0 +1,174 @@
+/* -------------------------------- L O A D  S C R E E N --------------------------------- */
+
+.load_screen {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 100%);
+    color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  .load_image { 
+    animation: loadingAnimation 2s infinite;
+  }
+
+
+@keyframes loadingAnimation {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(15px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+.card{
+    background-color: rgba(0, 2, 20, 0.897);
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0) ;
+}
+
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.tittle{
+    font-size: 40px;
+    color: rgb(245, 255, 108);
+    text-shadow: 0 0 70px #fff;
+
+}
+
+.country{
+    font-size: 28px;
+    color: rgb(213, 228, 0);
+}
+
+
+h1, h2, h3{
+    color: honeydew;
+    text-align: center;
+}
+
+.weather_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+section{
+    color: honeydew;
+}
+
+.temperature{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(211, 226, 1);
+}
+
+.icon_temp{
+    font-size: 30x;
+    color:rgb(250, 48, 48);
+}
+
+.back_tittle{
+    text-align: center;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+
+.data{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.icon_hum,
+.icon_wind,
+.icon_cloud,
+.icon_press {
+    font-size: 20px;
+}
+
+.icon_hum{
+    color: rgb(95, 95, 255);
+}
+
+.icon_wind{
+    color: rgb(199, 199, 199);
+}
+
+.icon_press{
+    color: rgb(255, 70, 24);
+}
+
+button{
+    border:none;
+    padding: 1rem 6rem;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: rgb(241, 253, 71);
+    box-shadow: 2px 2px 10px rgb(20, 20, 20);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s
+}
+
+button:hover{
+    transform: scale(1.07);
+}
+
+
+
+/* -------------------------------- D E S K T O P --------------------------------------- */
+
+@media  (min-width: 768px){
+    .weather_information{
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: repeat(5 1fr);
+        padding: 0 2rem;
+    }
+
+    .tittle{
+        font-size: 50px;
+    }
+
+    .weather_image{
+        grid-column: 1/2;
+    }
+
+    .information{
+        grid-column: 2/3;
+    }
+
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+}
