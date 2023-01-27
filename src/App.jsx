@@ -50,7 +50,7 @@ console.log(weather)
      { 
      isLoading ?
       <div className='load_screen'>
-        <img className='load_image' src="./src/assets/logo.png" alt="logo" />
+        <img className='load_image' src="./public/logo.png" alt="logo" />
       </div>
      :
      <WeatherCard 
