@@ -55,6 +55,7 @@ console.log(weather)
       </div>
      :
      <WeatherCard 
+        color={'black'}
         weather={weather}
         temperature={temperature}
       />

@@ -6,11 +6,11 @@
 
 body{
     margin: 0;
-    padding: 0;
     background-image: url(https://static.vecteezy.com/system/resources/previews/006/029/969/original/blue-sky-skyscape-background-concept-free-vector.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 

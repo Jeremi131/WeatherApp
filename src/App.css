@@ -165,6 +165,9 @@ button:hover{
         grid-column: 2/3;
     }
 
+    .temperature{
+        font-size: 35px;
+    }
 
     footer{
         display: flex;

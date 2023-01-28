@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const WeatherCard = ( {weather, temperature} ) => {
+const WeatherCard = ( {weather, temperature, color } ) => {
 
   const [isCelsius, setIsCelsius] = useState(true)
 
